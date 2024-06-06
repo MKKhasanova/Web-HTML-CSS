@@ -1,0 +1,1156 @@
+
+.font1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    line-height: 19px;
+    
+}
+.font2 {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    line-height: 19px;
+    
+}
+.font3 {
+    color: #9A9A9A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Open Sans';
+   
+}
+.font4 {
+    color: #22B2A4;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.font5 { /* заголовки */
+    color: #000000;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.font6 {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+}
+.font7 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1E96C8;
+    line-height: 19px;
+}
+.font8 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #2ad1c5;  
+}
+.font9 {
+    color: #000000;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;  
+}
+.font10{
+    font-size: 14px;
+    padding: 20px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 700; 
+    font-family: 'Open Sans';
+}
+.header-fixed {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 137px;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.header-fixed ul {
+    padding-left: 0;
+}
+
+.container{
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin-left: auto; /* Выравнивание контейнера по центру по горизонтали */
+    margin-right: auto; /* Выравнивание контейнера по центру по горизонтали */
+    padding-left: 20px; /* Внутренний отступ контейнера */
+    box-sizing: border-box; /* Размеры контейнера включают внутренний отступ и границы */
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.ofic{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.fa-solid.fa-cart-shopping {
+    display: flex;/* Используем flexbox для выравнивания элементов */
+    align-items: center;
+    justify-content: center;
+    color: white; /* Устанавливаем белый цвет текста иконки */
+    border-radius: 50%; /* Задаем радиус скругления углов для создания круглой формы */
+    background-color: #2AD1C5; /* Задаем зеленый цвет фона иконки */
+     /* Опционально: добавляем отступ внутри иконки для улучшения визуального эффекта */
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+}
+.fa-solid.fa-cart-shopping:hover{
+    background-color: #FFFA52;
+    color: #000000;
+}
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+} */
+.wrapper{
+    margin:200px auto; /* Устанавливает отступы от верхнего и нижнего края контейнера и центрирует его по горизонтали */
+    /* width:320px;Устанавливает ширину контейнера */
+    width: 135px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    display: flex; /* Добавляем flexbox для выравнивания элементов по вертикали и горизонтали */
+    background-color: #2AD1C5;/* Устанавливает цвет заднего фона контейнера */
+    position: relative;/* Устанавливает позиционирование контейнера */
+    text-align: center;/* Выравнивает текст в центре контейнера */
+    font-family: 'Open Sans';
+    justify-content: center;/* Выравниваем содержимое кнопки по горизонтали по центру */
+    align-items: center;
+    
+}
+#check-menu{
+    display: none; /* Скрывает элемент с id "check-menu" */
+}
+label{
+    display: block;/* Устанавливает элемент в виде блока */
+    position: absolute; /* Устанавливает абсолютное позиционирование элемента */
+    top: 0; /* Устанавливает отступ от верхнего края родительского элемента */
+    left: 0;/* Устанавливает отступ от левого края родительского элемента */
+    width: 100%;/* Устанавливает ширину элемента равной 100% от ширины родительского элемента */
+    height: 100%;  /* Устанавливает высоту элемента равной 100% от высоты родительского элемента */
+    cursor: pointer; /* Устанавливает курсор в виде указателя при наведении на элемент */
+   
+    padding: 15px 10px;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+.burger-line{
+    position: absolute; /* Устанавливает абсолютное позиционирование элемента */
+    top: 17px; /* Устанавливает отступ от верхнего края родительского элемента */
+    right: 20px; /* Устанавливает отступ от правого края родительского элемента */
+    width: 20px; /* Устанавливает ширину элемента */
+    height: 2px; /* Устанавливает высоту элемента */
+    background-color:#FFF; /* Устанавливает цвет заднего фона элемента*/
+    transition: .5s all; /* Добавляет плавный переход для всех свойств на протяжении 0.5 секунды */
+}
+.second, .third{
+    top: 25px; /* Устанавливает отступ сверху для элементов с классами .second и .third */
+}
+
+.fourth{
+    top: 33px; /* Устанавливает отступ сверху для элемента с классом .fourth */
+}
+
+.main-menu{
+    display: block; /* Устанавливает отображение элемента в виде блока */
+    position:absolute; /* Устанавливает абсолютное позиционирование элемента относительно ближайшего родительского элемента */
+    /* width: 100%; Устанавливает ширину элемента равной 100% от ширины родительского элемента */
+    bottom: 0; /* Устанавливает отступ от нижнего края родительского элемента */
+    left: 0; /* Устанавливает отступ от левого края родительского элемента */
+    transform: translateY(100%); /* Применяет 2D-перемещение по вертикали на 100% высоты элемента */
+    max-height: 0; /* Устанавливает максимальную высоту элемента равной 0 */
+    font-size: 0; /* Устанавливает размер шрифта элемента равный 0 */
+    overflow: hidden; /* Скрывает содержимое, которое не помещается в контейнер */
+    transition: .5s all; /* Добавляет плавный переход для всех свойств на протяжении 0.5 секунды */
+}
+
+.nav-link {
+    display: block; /* Устанавливает элемент в виде блока */
+    /* Устанавливает ширину элемента равной 100% от ширины родительского элемента */
+    padding: 10px; /* Устанавливает отступ внутри элемента */
+    color: #000; 
+    text-decoration: none; /* Удаляет стандартное оформление текста ссылки */
+    border-top: 1px solid rgba(255,255,255,.3); /* Устанавливает верхнюю границу элемента */
+    background-color: #edf0f2;
+    width: 135px;
+    font-family: 'font1';  
+}
+
+.nav-link:hover {
+    background-color: #ccc; 
+    color: #fff; 
+}
+
+/*анимация каталога*/
+#check-menu:checked ~ .main-menu{ 
+    max-height: 500px; 
+    font-size: 16px; 
+}
+
+#check-menu:checked ~ .first{
+    display: none; /* Скрывает элемент с классом .first при выбранном (checked) состоянии #check-menu */
+}
+
+#check-menu:checked ~ .second{
+    transform: rotate(45deg); /* Применяет поворот элемента на 45 градусов */
+}
+
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg); /* Применяет поворот элемента на -45 градусов */
+}
+
+#check-menu:checked ~ .fourth{
+    display: none; /* Скрывает элемент с классом .fourth при выбранном (checked) состоянии #check-menu */
+}
+
+.search-box{
+    display: flex;/* Используем flexbox для выравнивания элементов */
+    align-items: center;/* Выравниваем элементы по вертикали */
+    border-radius: 30px;
+    width: 700px;
+    height: 50px;
+   /* flex-shrink: 0; /* Отключаем уменьшение размера элемента при недостатке места */
+    border: 1px solid var(--Mint, #2AD1C5);/* Задаем границу с помощью 1-пиксельной сплошной линии с цветом, выбранным через переменные CSS */
+    background: var(--White, #FFF);/* Задаем фоновый цвет, выбранный через переменные CSS */
+    
+}
+.search-txt {
+    flex-grow: 1; /* Растягиваем поле ввода, чтобы занять доступное пространство */
+    border: none;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    color: #9A9A9A;
+    font-size: 14px;
+}   
+.btn {
+    background-color: #2AD1C5;
+    border-radius: 30px;
+    width: 135px; 
+    height: 50px;
+    justify-content: center;/* Выравниваем содержимое кнопки по горизонтали по центру */
+    align-items: center;/* Выравниваем содержимое кнопки по вертикали по центру */
+    gap: 4px;/* Задаем расстояние между иконкой и текстом */
+    flex-shrink: 0; /* Отключаем уменьшение размера кнопки при недостатке места */
+    padding-left: 10px; /* Добавляем отступ слева для иконки */
+    position: relative; /* Устанавливаем позиционирование для иконки */
+    border: 1px solid var(--Mint, #2AD1C5);
+    color: white;
+    float: right; /* Помещаем кнопку справа от .search-box */
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+.fa-solid.fa-bars {
+    color: #fff; /* Задаем белый цвет иконке */
+    margin-right: 10px; /* Добавляем отступ справа от иконки */
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: #FFFA52;
+    color: #000000;
+   
+
+}
+.btn i {
+    position: absolute; /* Устанавливаем позиционирование иконки */
+    left: 20px; /* Устанавливаем положение иконки относительно кнопки */
+    top: 50%; /* Устанавливаем вертикальное положение иконки по центру кнопки */
+    transform: translateY(-50%); /* Используем transform для того, чтобы иконка была по вертикали по центру кнопки */
+}
+.menu-item {
+    margin-right: 20px;
+  } 
+.header-scroll {
+    background-color: #2ad1c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-shrink: 0;
+}
+.shapka{ 
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex; /* Добавляем flexbox для выравнивания элементов списка */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+.sh {
+    font-size: 14px;
+    padding: 15px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 700; 
+    font-family: 'Open Sans';
+}
+a:hover {
+    color: #FFFA52;
+    text-decoration: none;
+} 
+
+li{
+    display: inline;
+}
+
+body{
+    background-color: #EDF0F2;
+}
+.vibor{
+    width: 180px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF; 
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+   
+
+}
+.vibor img{
+     width: 100%;
+     border-radius: 15px;
+}
+.perv {
+    display: flex;
+    flex-wrap: nowrap;   /*не дает выйти за пределы контейнера*/
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+   
+}
+  
+
+.vtor{
+    display: flex;
+    flex-wrap: nowrap;  
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 18px;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    gap: 10px;
+    background: var(--White, #EDF0F2);
+    
+}
+.product{
+    width: 280px;
+    height: 610px;
+    border-radius: 15px;
+    background: var(--White, #ffffff);  
+} 
+
+.info{
+    
+    margin-left: 20px;
+    margin-left: 20px;
+}
+
+.image img{
+    width: 100%;
+     border-radius: 15px;
+    height: 40%px;
+
+   
+}
+.rating{ /*отзыв рейтинг*/
+   
+    color: #F4D540;
+}
+
+.add-to-cart{
+    display: flex;/* Используем flexbox для выравнивания элементов */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* color: white; /* Устанавливаем белый цвет текста иконки */
+    /*/*border-radius: 50%; /* Задаем радиус скругления углов для создания круглой формы */
+    /*background-color: #2AD1C5; /* Задаем зеленый цвет фона иконки */
+   /* padding: 5px; /* Опционально: добавляем отступ внутри иконки для улучшения визуального эффекта */
+    /*width: 53px;
+    height: 50px;
+    flex-shrink: 0; */
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+.info-price{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.availability{
+    margin-top: 100px;
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+    margin-bottom: 1px; /* Пример отступа между элементами списка */
+}
+  
+.list-item i {
+    margin-right: 10px; /* Пример отступа между иконкой и текстом */
+}
+.fa-square-check{
+    background-color: #2AD1C5;
+    color: #FFFA52;  
+}
+
+.product1 {
+    display: flex;
+    align-items: center;
+  }
+  
+.add-to-cart-btn{
+    border-radius: 45px;
+    border: none;
+    background-color: #FFF;
+}
+  
+.cart-info {
+    display: flex;
+    align-items: center;
+}
+  
+.decrease-btn,
+.increase-btn {
+    padding: 5px;
+    background-color: #2AD1C5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+} 
+.quantity {
+    margin: 0 5px;
+    margin-top: 15px;
+}
+.zelenfooter{
+    
+    height: 137px;
+    background-color: #2ad1c5;
+    margin: 0;
+    box-sizing:border-box;
+}
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 137px;
+   
+   
+   
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.email-box{
+    display: flex;/* Используем flexbox для выравнивания элементов */
+    align-items: center;/* Выравниваем элементы по вертикали */
+    border-radius: 30px;
+    width: 500px;
+    height: 50px;
+   /* flex-shrink: 0; /* Отключаем уменьшение размера элемента при недостатке места */
+    border: 1px solid var(--Mint, #2AD1C5);/* Задаем границу с помощью 1-пиксельной сплошной линии с цветом, выбранным через переменные CSS */
+    background: var(--White, #FFF);/* Задаем фоновый цвет, выбранный через переменные CSS */
+}
+.email-txt {
+    flex-grow: 1; /* Растягиваем поле ввода, чтобы занять доступное пространство */
+    border: none;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    color: #9A9A9A;
+    font-size: 14px;
+}  
+.fa-arrow-right{
+    color: #9A9A9A;
+    margin-right: 20px;
+}
+
+
+.social_network{
+    color: #FFF;
+}
+.fa-brands {
+    font-size: 30px; /* Задает размер иконок 24 пикселя */
+  }
+
+.foot ul {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    
+}
+.foot li{
+    padding-top: 20px;
+}
+
+.foot div{
+    display: inline-block;
+}
+.kartochka{
+    display: flex;
+    width: 900px;
+    height: 550px;
+    border-radius: 15px;
+    background: var(--White, #FFF);  
+    margin-left: 0px;
+   
+}
+.imag{
+    width: 300px;
+    height: 311px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.kanefronN {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opisanie {
+    display: flex;
+    flex-direction: row;
+}
+.otzivi{
+    display: flex;
+    flex-direction: row;
+}
+.nal, .nalgray{
+    text-align: right;
+    margin: 1px;
+}
+.productname{
+    margin-bottom: 5px;
+}
+.korz{  
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.container1{
+    padding: 20px;
+}
+
+.manual {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.manual ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+} 
+.manual ul li {
+    margin-right: 40px;
+}
+  
+.manual ul:last-child li {
+    margin-right: 0;
+}
+
+.imag{
+    width: 300px;
+    height: 311px;
+    object-fit: cover; /*изображение будет масштабироваться таким образом, чтобы полностью заполнять заданную область, при этом сохраняя свои пропорции.*/
+    border-radius: 7px;
+}
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.kanefronN {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kartochkatovar {
+    display: flex;
+}
+.opisanie {
+    display: flex;
+    flex-direction: row;
+}
+.otzivi{
+    display: flex;
+    flex-direction: row;
+}
+.nal, .nalgray{
+    text-align: right;
+    margin: 1px;
+}
+.productname{
+    margin-bottom: 5px;
+}
+.korz{  
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+.container1{
+    padding: 20px;
+}
+
+.manual {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.manual ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+} 
+.manual ul li {
+    margin-right: 40px;
+}
+  
+.manual ul:last-child li {
+    margin-right: 0;
+}
+.instruc ul {
+    padding-left: 0;
+}
+.instruc li {
+    list-style-type: none;
+    text-align: left;
+}
+.instruc p {
+    text-align: left;
+}
+.ocompany ul {
+    padding-left: 0;
+}
+.tovvkorzine {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    background: var(--White, #ffffff);  
+}
+
+.imagss, div {
+    flex-grow: 1;
+}
+.imagss img{
+    width: 80%;
+     border-radius: 15px;  
+     height: 90%;
+}
+.imagss {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.udp li {
+    margin: 30px;
+}
+.knop-{
+    background-color: #2AD1C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2ad1c5;
+    color: white;
+    border: 1px solid var(--Mint, #2AD1C5);
+    font-family: 'Open Sans';
+    font-size: 28px;
+}
+.knops{
+    background-color: #2AD1C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid var(--Mint, #2AD1C5);
+    font-family: 'Open Sans';
+    font-size: 28px;
+}
+.knop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.knop li {
+    margin:  10px;
+}
+
+.knop li {
+    display: inline-block;
+}
+
+.knop- {
+    margin-right: 5px;
+}
+
+.knops {
+    margin-left: 5px;
+}
+
+.pop {
+    background-color: #2AD1C5;
+    border-radius: 30px;
+    width: 160px; 
+    height: 50px;
+    justify-content: center;/* Выравниваем содержимое кнопки по горизонтали по центру */
+    align-items: center;/* Выравниваем содержимое кнопки по вертикали по центру */
+    gap: 4px;/* Задаем расстояние между иконкой и текстом */
+    flex-shrink: 0; /* Отключаем уменьшение размера кнопки при недостатке места */
+    padding-left: 10px; /* Добавляем отступ слева для иконки */
+    position: relative; /* Устанавливаем позиционирование для иконки */
+    border: 1px solid var(--Mint, #2AD1C5);
+    color: white;
+    float: right; /* Помещаем кнопку справа от .search-box */
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+.tovvkorzine{
+    padding-bottom: 10px;
+}
+.strkor{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.itogo{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+}
+@media screen and (max-width: 1000px) {
+    .sh {
+        font-size: 1vw;
+        padding: 7px;
+    }
+    .fa-solid.fa-bars {
+        margin-right: 44px;
+    
+    }
+    .ofic {
+        display: none;
+    }
+    #check-menu:checked ~ .main-menu{ 
+        max-height: 300px; 
+        font-size: 11px; 
+        
+    }
+    .search-box{
+        width: 450px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .search-txt {
+        font-size: 11px;
+    }
+    .btn{
+        padding-left: 22px;
+        width: 109px;
+        height: 30px;
+        font-size: 11px;
+    }
+    /* .main-menu{
+        display: none;
+    } */
+    .wrapper{
+        width: 78px;
+    height: 28px;
+
+    }
+    .check-menu{
+        padding: 8px 20px;
+    }
+   
+    .header-fixed{
+        height: 72px;
+    }
+    .container{
+        padding-left: 81px;
+        padding-right: 81px;
+        padding-top:  10px;
+    }
+    .burger-line{
+        display: none;
+    }
+   
+   
+    .check-menu{
+        padding: 27px 10px;
+        padding-top: 17px;
+    }
+    .product{
+        height: 356px;
+
+    }
+    
+    .name{
+        font-size: 16px;
+    }
+    .perv{
+       
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+    .font1 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        color: #000000;
+        line-height: 19px;
+    }
+    .rating i {
+        font-size: 11px; /* устанавливаем желаемый размер иконок для маленького экрана */
+    }
+    .menu-item{
+        font-size:11px;
+    }
+    .fa-solid.fa-cart-shopping {
+        width: 35px;
+        height: 35px;
+    }
+    .availability {
+        margin-top: 9px;
+    }
+    .vibor{
+        width: 117px;
+        height: 160px;
+    }
+    .font2 {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 16px;
+        color: #000000;
+        line-height: 19px;
+        
+    }
+    .font3 {
+        color: #9A9A9A;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: 'Open Sans';
+       
+    }
+    .font4 {
+        color: #22B2A4;
+        font-family: 'Open Sans';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+    }
+    
+    .font5 { /* заголовки */
+        color: #000000;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .font6 {
+        color: #FFF;
+        font-family: 'Open Sans';
+        font-size: 11px;
+        font-style: normal;
+        line-height: normal;  
+    }
+    .font7 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        color: #1E96C8;
+        line-height: 19px;
+    }
+    .font8 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #2ad1c5;  
+    }
+    .font9 {
+        color: #000000;
+        font-family: 'Open Sans';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;  
+    }
+    .font10{
+        font-size: 14px;
+        padding: 16px;
+        color: #FFF;
+        text-decoration: none;
+        font-weight: 700; 
+        font-family: 'Open Sans';
+    }
+    .add-to-cart-btn{
+        font-size: 11px;
+    }
+    .zelenfooter{
+        height: 100px;
+    }
+    .footer-social{
+        margin: -30px;
+    }
+    .email-box{
+        width: 311px;
+        height: 31px;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .sh {
+        display: none;
+    }
+    .fa-solid.fa-bars {
+        margin-right: 44px;
+    
+    }
+    .ofic {
+        display: none;
+    }
+    #check-menu:checked ~ .main-menu{ 
+        max-height: 300px; 
+        font-size: 11px; 
+        
+    }
+    .search-box{
+        width: 450px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .search-txt {
+        font-size: 11px;
+    }
+    .btn{
+        padding-left: 22px;
+        width: 109px;
+        height: 30px;
+        font-size: 11px;
+    }
+    /* .main-menu{
+        display: none;
+    } */
+    .wrapper{
+        width: 78px;
+    height: 28px;
+
+    }
+    .check-menu{
+        padding: 8px 20px;
+    }
+   
+    .header-fixed{
+        height: 72px;
+    }
+    .container{
+        padding-left: 81px;
+        padding-right: 81px;
+        padding-top:  10px;
+    }
+    .burger-line{
+        display: none;
+    }
+   
+   
+    .check-menu{
+        padding: 27px 10px;
+        padding-top: 17px;
+    }
+    .product{
+        height: 356px;
+
+    }
+    
+    .name{
+        font-size: 16px;
+    }
+    .perv{
+       
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+    .font1 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        color: #000000;
+        line-height: 19px;
+    }
+    .rating i {
+        font-size: 11px; /* устанавливаем желаемый размер иконок для маленького экрана */
+    }
+    .menu-item{
+        font-size:11px;
+    }
+    .fa-solid.fa-cart-shopping {
+        width: 35px;
+        height: 35px;
+    }
+    .availability {
+        margin-top: 9px;
+    }
+    .vibor{
+        width: 117px;
+        height: 160px;
+    }
+    .font2 {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 16px;
+        color: #000000;
+        line-height: 19px;
+        
+    }
+    .font3 {
+        color: #9A9A9A;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: 'Open Sans';
+       
+    }
+    .font4 {
+        color: #22B2A4;
+        font-family: 'Open Sans';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+    }
+    
+    .font5 { /* заголовки */
+        color: #000000;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .font6 {
+        color: #FFF;
+        font-family: 'Open Sans';
+        font-size: 11px;
+        font-style: normal;
+        line-height: normal;  
+    }
+    .font7 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        color: #1E96C8;
+        line-height: 19px;
+    }
+    .font8 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #2ad1c5;  
+    }
+    .font9 {
+        color: #000000;
+        font-family: 'Open Sans';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;  
+    }
+}

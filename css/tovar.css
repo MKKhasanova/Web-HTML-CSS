@@ -1,0 +1,142 @@
+.kartochka{
+    width: 900px;
+    height: 550px;
+    border-radius: 15px;
+    background: var(--White, #FFF);  
+    margin: 50px;
+   
+}
+.imag{
+    width: 300px;
+    height: 311px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.kanefronN {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kartochkatovar {
+    display: flex;
+}
+.opisanie {
+    display: flex;
+    flex-direction: row;
+}
+.otzivi{
+    display: flex;
+    flex-direction: row;
+}
+.nal, .nalgray{
+    text-align: right;
+    margin: 1px;
+}
+.productname{
+    margin-bottom: 5px;
+}
+.korz{  
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.container1{
+    padding: 20px;
+}
+
+.manual {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.manual ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+} 
+.manual ul li {
+    margin-right: 40px;
+}
+  
+.manual ul:last-child li {
+    margin-right: 0;
+}
+.kartochka{
+    width: 900px;
+    height: 550px;
+    border-radius: 15px;
+    background: var(--White, #FFF);  
+    margin: 50px;
+   
+}
+.imag{
+    width: 300px;
+    height: 311px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.kanefronN {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kartochkatovar {
+    display: flex;
+}
+.opisanie {
+    display: flex;
+    flex-direction: row;
+}
+.otzivi{
+    display: flex;
+    flex-direction: row;
+}
+.nal, .nalgray{
+    text-align: right;
+    margin: 1px;
+}
+.productname{
+    margin-bottom: 5px;
+}
+.korz{  
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.container1{
+    padding: 20px;
+}
+
+.manual {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.manual ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+} 
+.manual ul li {
+    margin-right: 40px;
+}
+  
+.manual ul:last-child li {
+    margin-right: 0;
+}

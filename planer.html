@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3d1c69e547.js" crossorigin="anonymous"></script>
+    <script src="./js/counter.js"></script>
+   
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="front-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+</head>
+
+      
+<body>  
+    <div id="header"></div>
+    <div class = "container">
+        <div class="aptekapz mt-4">   <!-- аптеки планета здоровья -->
+            <div>
+                <p class="name font5">Аптеки Планета Здоровья</p>
+            </div>
+            <div class="perv">   
+                <div class="lekibad"> <!-- лекарства и бад -->
+                    <div class="vibor">
+                        <img src="img/image 12 (7).png" alt="">
+                        <p class="name font1">Лекарства и БАД</p>           
+                    </div>
+                </div>
+                <div class="mamaimalish"> <!-- Мама и малыш -->          
+                    <div class="vibor">
+                        <div class="immama">
+                            <img src="img/мама и малыш.png" alt="">
+                            <p class="name font1">Мама и малыш</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kosmetika"> <!-- Косметика -->          
+                    <div class="vibor">
+                        <img src="img/косметика.png" alt="">
+                        <p class="name font1">Косметика</p>
+                    </div>
+                </div>
+                <div class="medteh"> <!-- Медицинская техника -->          
+                    <div class="vibor">
+                        <img src="img/мед техника.png" alt="">
+                        <p class="name font1">Медицинская <br>техника</p>
+                    </div>
+                </div>
+                <div class="ortopedizdel"> <!-- Ортопедические изделия -->          
+                    <div class="vibor">
+                        <img src="img/ортопедич издел.png" alt="">
+                        <p class="name font1">Ортопедические <br>изделия</p>
+                    </div>
+                </div>
+                <div class="ecotovars"> <!-- Ортопедические изделия -->          
+                    <div class="vibor">
+                        <img src="img/эко товары.png" alt="">
+                        <p class="name font1">Эко-товары</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vtor"> 
+                <div class="izdmednazn"> <!-- Изделия медицинского назначения -->          
+                    <div class="vibor">
+                        <img src="img/мед техника.png" alt="">
+                        <p class="name font1">Изделия <br>медицинского<br> назначения</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="populartovars mt-5">
+            <div>  
+                <p class="name font5">Популярные товары</p>
+            </div>
+            <div class="row">
+                
+                    <div class="product">
+                        <div class="image">
+                            <a href="1tovar.html">
+                                <img src="img/канефрон1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <span class="price font2">от 230₽</span>
+                            <p class="product-name font1">Канефрон Н таб №60</p>
+                            <p class="availability font1">В наличии в 646 аптеках</p>
+                            <p class="availabilitygray font3">Под заказ в 656 аптеках</p>
+                            <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <div class="info-price">
+                                <span class="buyinoneclick font4">Купить в один клик</span>
+                                <div id="kanefron-cart-buttons" style="display: none;">  
+                                    <button class="decrease-btn" onclick="decreaseKanefronQuantity()">-</button>
+                                    <span class="kanefron-quantity quantity">0</span>
+                                    <button class="increase-btn" onclick="increaseKanefronQuantity()">+</button>  
+                                </div> 
+                                                    
+                                <button id="kanefron-add-to-cart-btn" class="add-to-cart-btn" onclick="kanefronAddToCart()"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                
+                    <div class="product">
+                        <div class="image">
+                            <a href="1tovar.html"></a>
+                                <img src="img/креон.png" alt="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <span class="price font2">от 276₽</span>
+                            <p class="product-name font1">Креон ® 10 000 капс №20</p>
+                            <p class="availability font1">В наличии в 512 аптеках</p>
+                            <p class="availabilitygray font3">Под заказ в 612 аптеках</p>
+                            <ul class="rating">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <div class="info-price">
+                                <span class="buyinoneclick font4">Купить в один клик</span>
+                                <div id="kreon-cart-buttons" style="display: none;">  
+                                    <button class="decrease-btn" onclick="decreaseKreonQuantity()">-</button>
+                                    <span class="kreon-quantity quantity">0</span>
+                                    <button class="increase-btn" onclick="increaseKreonQuantity()">+</button>  
+                                </div>                       
+                                <button id="kreon-add-to-cart-btn" class="add-to-cart-btn" onclick="kreonAddToCart()"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="product">
+                    <div class="image">
+                            <img src="img/пенталгин.png" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="price font2">от 172₽</span>
+                            <p class="product-name font1">Пенталгин таб. №24</p>
+                            <p class="availability font1">В наличии в 565 аптеках</p>
+                            <p class="availabilitygray font3">Под заказ в 622 аптеках</p>
+                            <ul class="rating">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <div class="info-price">
+                                <span class="buyinoneclick font4">Купить в один клик</span>
+                                <div id="pentalgin-cart-buttons" style="display: none;">  
+                                    <button class="decrease-btn" onclick="decreasePentalginQuantity()">-</button>
+                                    <span class="pentalgin-quantity quantity">0</span>
+                                    <button class="increase-btn" onclick="increasePentalginQuantity()">+</button>  
+                                </div>                       
+                                <button id="pentalgin-add-to-cart-btn" class="add-to-cart-btn" onclick="pentalginAddToCart()"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="product">
+                        <div class="image">
+                            <img src="img/ренгалин.png" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="price font2">от 255₽</span>
+                            <p class="product-name font1">Ренгалин таб №20</p>
+                            <p class="availability font1">В наличии в 544 аптеках</p>
+                            <p class="availabilitygray font3">Под заказ в 624 аптеках</p>
+                        <ul class="rating">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <div class="info-price">
+                            <span class="buyinoneclick font4">Купить в один клик</span>
+                            <div id="rengalin-cart-buttons" style="display: none;">
+                                <button class="decrease-btn" onclick="decreaseRengalinQuantity()">-</button>
+                                <span class="rengalin-quantity quantity">0</span>
+                                <button class="increase-btn" onclick="increaseRengalinQuantity()">+</button>  
+                            </div>                       
+                            <button id="rengalin-add-to-cart-btn" class="add-to-cart-btn" onclick="rengalinAddToCart()"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="ocompany">
+            
+                <p class="name font5">О компании</p>
+            
+            <ul class="text">
+                
+                <li><p class="font1">Аптеки «Планета Здоровья» — победитель Международной фармацевтической премии «Зеленый крест» — 2022 в номинации «Лучшая аптечная <br>сеть России — выбор фармацевтического сообщества».</p></li>
+                <li><p class="font1">Аптеки  «Планета Здоровья» - это:</p></li>
+                <li class="list-item">
+                    <i class="fa-solid fa-square-check"></i>
+                    <p class="font1">10 миллионов покупателей в месяц</p>
+                </li>
+                <li class="list-item">
+                    <i class="fa-solid fa-square-check"></i>
+                    <p class="font1">2300 аптек в 53 регионах России</p>
+                </li>
+                <li class="list-item">
+                    <i class="fa-solid fa-square-check"></i>
+                    <p class="font1">330 аптек «Страна Детства»</p>
+                </li>
+                <li class="list-item">
+                    <i class="fa-solid fa-square-check"></i>
+                    <p class="font1">150 аптек-участников уникального проекта «Юный фармацевт»</p>
+                </li>
+                <li class="list-item">
+                    <i class="fa-solid fa-square-check"></i>
+                    <p class="font1">первоклассное обслуживание и качественные лекарства.</p>
+                </li>    
+            </uil>
+        </div>
+    </div>
+     
+</body>
+<div id="footer"></div>
+</html>

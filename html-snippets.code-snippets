@@ -1,0 +1,28 @@
+{
+    "Font1": {
+      "prefix": "font1",
+      "body": [
+        "color: var(--Brown, #454141);",
+        "font-family: Inter;",
+        "font-size: 14px;",
+        "font-style: normal;",
+        "font-weight: 400;",
+        "line-height: normal;",
+        "font-family: 'Open Sans';"
+      ],
+      "description": "Font settings 1"
+    },
+    "Font2": {
+      "prefix": "font2",
+      "body": [
+        "color: var(--Patina-Green, #22B2A4);",
+        "font-family: Open Sans;",
+        "font-size: 14px;",
+        "font-style: normal;",
+        "font-weight: 400;",
+        "line-height: normal;"
+      ],
+      "description": "Font settings 2"
+    }
+  }
+  

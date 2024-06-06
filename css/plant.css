@@ -1,0 +1,430 @@
+.header-fixed {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 137px;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+   
+}
+.ofic{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.fa-solid.fa-cart-shopping {
+    display: flex;/* Используем flexbox для выравнивания элементов */
+    align-items: center;
+    justify-content: center;
+    color: white; /* Устанавливаем белый цвет текста иконки */
+    border-radius: 50%; /* Задаем радиус скругления углов для создания круглой формы */
+    background-color: #2AD1C5; /* Задаем зеленый цвет фона иконки */
+     /* Опционально: добавляем отступ внутри иконки для улучшения визуального эффекта */
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+}
+.fa-solid.fa-cart-shopping:hover{
+    background-color: #FFFA52;
+    color: #000000;
+}
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+} */
+.wrapper{
+    margin:200px auto; /* Устанавливает отступы от верхнего и нижнего края контейнера и центрирует его по горизонтали */
+    /* width:320px;Устанавливает ширину контейнера */
+    width: 135px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    display: flex; /* Добавляем flexbox для выравнивания элементов по вертикали и горизонтали */
+    background-color: #2AD1C5;/* Устанавливает цвет заднего фона контейнера */
+    position: relative;/* Устанавливает позиционирование контейнера */
+    text-align: center;/* Выравнивает текст в центре контейнера */
+    font-family: 'Open Sans';
+    
+}
+#check-menu{
+    display: none; /* Скрывает элемент с id "check-menu" */
+}
+label{
+    display: block;/* Устанавливает элемент в виде блока */
+    position: absolute; /* Устанавливает абсолютное позиционирование элемента */
+    top: 0; /* Устанавливает отступ от верхнего края родительского элемента */
+    left: 0;/* Устанавливает отступ от левого края родительского элемента */
+    width: 100%;/* Устанавливает ширину элемента равной 100% от ширины родительского элемента */
+    height: 100%;  /* Устанавливает высоту элемента равной 100% от высоты родительского элемента */
+    cursor: pointer; /* Устанавливает курсор в виде указателя при наведении на элемент */
+    z-index: 2; /* Устанавливает значение z-index для элемента */
+    padding: 15px 10px;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+.burger-line{
+    position: absolute; /* Устанавливает абсолютное позиционирование элемента */
+    top: 17px; /* Устанавливает отступ от верхнего края родительского элемента */
+    right: 20px; /* Устанавливает отступ от правого края родительского элемента */
+    width: 20px; /* Устанавливает ширину элемента */
+    height: 2px; /* Устанавливает высоту элемента */
+    background-color:#FFF; /* Устанавливает цвет заднего фона элемента*/
+    transition: .5s all; /* Добавляет плавный переход для всех свойств на протяжении 0.5 секунды */
+}
+.second, .third{
+    top: 25px; /* Устанавливает отступ сверху для элементов с классами .second и .third */
+}
+
+.fourth{
+    top: 33px; /* Устанавливает отступ сверху для элемента с классом .fourth */
+}
+
+.main-menu{
+    display: block; /* Устанавливает отображение элемента в виде блока */
+    position:absolute; /* Устанавливает абсолютное позиционирование элемента относительно ближайшего родительского элемента */
+    /* width: 100%; Устанавливает ширину элемента равной 100% от ширины родительского элемента */
+    bottom: 0; /* Устанавливает отступ от нижнего края родительского элемента */
+    left: 0; /* Устанавливает отступ от левого края родительского элемента */
+    transform: translateY(100%); /* Применяет 2D-перемещение по вертикали на 100% высоты элемента */
+    max-height: 0; /* Устанавливает максимальную высоту элемента равной 0 */
+    font-size: 0; /* Устанавливает размер шрифта элемента равный 0 */
+    overflow: hidden; /* Скрывает содержимое, которое не помещается в контейнер */
+    transition: .5s all; /* Добавляет плавный переход для всех свойств на протяжении 0.5 секунды */
+}
+
+.nav-link {
+    display: block; /* Устанавливает элемент в виде блока */
+    /* Устанавливает ширину элемента равной 100% от ширины родительского элемента */
+    padding: 10px; /* Устанавливает отступ внутри элемента */
+    color: #000; /* Устанавливает цвет текста элемента */
+    text-decoration: none; /* Удаляет стандартное оформление текста ссылки */
+    border-top: 1px solid rgba(255,255,255,.3); /* Устанавливает верхнюю границу элемента */
+    background-color: #edf0f2; /* Устанавливает цвет заднего фона элемента */
+    width: 135px;
+    font-family: 'font1';  
+}
+
+.nav-link:hover {
+    background-color: #ccc; /* Устанавливает цвет заднего фона ссылки при наведении на нее */
+    color: #fff; /* Устанавливает цвет текста ссылки при наведении на нее */
+}
+
+/*анимация каталога*/
+#check-menu:checked ~ .main-menu{ 
+    max-height: 500px; /* Устанавливает максимальную высоту элемента равной 500 пикселям */
+    font-size: 16px; /* Устанавливает размер шрифта элемента равный 16 пикселям */
+}
+
+#check-menu:checked ~ .first{
+    display: none; /* Скрывает элемент с классом .first при выбранном (checked) состоянии #check-menu */
+}
+
+#check-menu:checked ~ .second{
+    transform: rotate(45deg); /* Применяет поворот элемента на 45 градусов */
+}
+
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg); /* Применяет поворот элемента на -45 градусов */
+}
+
+#check-menu:checked ~ .fourth{
+    display: none; /* Скрывает элемент с классом .fourth при выбранном (checked) состоянии #check-menu */
+}
+
+.search-box{
+    display: flex;/* Используем flexbox для выравнивания элементов */
+    align-items: center;/* Выравниваем элементы по вертикали */
+    border-radius: 30px;
+    width: 700px;
+    height: 50px;
+   /* flex-shrink: 0; /* Отключаем уменьшение размера элемента при недостатке места */
+    border: 1px solid var(--Mint, #2AD1C5);/* Задаем границу с помощью 1-пиксельной сплошной линии с цветом, выбранным через переменные CSS */
+    background: var(--White, #FFF);/* Задаем фоновый цвет, выбранный через переменные CSS */
+    
+}
+.search-txt {
+    flex-grow: 1; /* Растягиваем поле ввода, чтобы занять доступное пространство */
+    border: none;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    color: #9A9A9A;
+    font-size: 14px;
+}   
+.btn {
+    background-color: #2AD1C5;
+    border-radius: 30px;/* Задаем радиус скругления углов кнопки */
+    width: 135px; /* Задаем ширину кнопки */
+    height: 50px;/* Задаем высоту кнопки */
+    justify-content: center;/* Выравниваем содержимое кнопки по горизонтали по центру */
+    align-items: center;/* Выравниваем содержимое кнопки по вертикали по центру */
+    gap: 4px;/* Задаем расстояние между иконкой и текстом */
+    flex-shrink: 0; /* Отключаем уменьшение размера кнопки при недостатке места */
+    padding-left: 10px; /* Добавляем отступ слева для иконки */
+    position: relative; /* Устанавливаем позиционирование для иконки */
+    border: 1px solid var(--Mint, #2AD1C5);
+    color: white;
+    float: right; /* Помещаем кнопку справа от .search-box */
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+.fa-solid.fa-bars {
+    color: #fff; /* Задаем белый цвет иконке */
+    margin-right: 10px; /* Добавляем отступ справа от иконки */
+}
+
+.btn:hover{
+    background-color: #FFFA52;
+    color: #000000;
+   
+
+}
+.btn i {
+    position: absolute; /* Устанавливаем позиционирование иконки */
+    left: 20px; /* Устанавливаем положение иконки относительно кнопки */
+    top: 50%; /* Устанавливаем вертикальное положение иконки по центру кнопки */
+    transform: translateY(-50%); /* Используем transform для того, чтобы иконка была по вертикали по центру кнопки */
+}
+.menu-item {
+    margin-right: 30px;
+  } 
+.header-scroll {
+    background-color: #2ad1c5;
+    top: 10p6tfvx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-shrink: 0;
+}
+.shapka{ 
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex; /* Добавляем flexbox для выравнивания элементов списка */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+.sh {
+    font-size: 14px;
+    padding: 20px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 700; 
+    font-family: 'Open Sans';
+}
+a:hover {
+    color: #FFFA52;
+    text-decoration: none;
+} 
+
+li{
+    display: inline;
+}
+
+body{
+    background-color: #EDF0F2;
+}
+.vibor{
+    width: 200px;
+    height: 265px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.perv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+  
+.lekibad, .mamaimalish, .kosmetika, .medteh, .ortopedizdel, .ecotovars, .izdmednazn, .sertpz{
+    margin-right: 10px;
+}
+.vtor{
+    display: flex;
+    flex-wrap: nowrap;  
+    align-items: flex-start;
+    margin-top: 20px;
+    padding-left: 100px;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    background: var(--White, #04d18d);
+    
+}
+.product{
+    width: 300px;
+    height: 710px;
+    border-radius: 15px;
+    background: var(--White, #d10404);  
+    margin: 0 auto;  
+}
+
+.info{
+    margin-left: 20px;
+    margin-left: 20px;
+}
+
+.image img{
+    width: 300px;
+    height: 311px;
+    border-radius: 7px;
+}
+.rating{ /*отзыв рейтинг*/
+   
+    color: #F4D540;
+}
+
+.add-to-cart{
+    display: flex;/* Используем flexbox для выравнивания элементов */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* color: white; /* Устанавливаем белый цвет текста иконки */
+    /*/*border-radius: 50%; /* Задаем радиус скругления углов для создания круглой формы */
+    /*background-color: #2AD1C5; /* Задаем зеленый цвет фона иконки */
+   /* padding: 5px; /* Опционально: добавляем отступ внутри иконки для улучшения визуального эффекта */
+    /*width: 53px;
+    height: 50px;
+    flex-shrink: 0; */
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+.info-price{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.availability{
+    margin-top: 100px;
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+    margin-bottom: 1px; /* Пример отступа между элементами списка */
+}
+  
+.list-item i {
+    margin-right: 10px; /* Пример отступа между иконкой и текстом */
+}
+.fa-square-check{
+    background-color: #2AD1C5;
+    color: #FFFA52;  
+}
+
+.product1 {
+    display: flex;
+    align-items: center;
+  }
+  
+.add-to-cart-btn{
+    border-radius: 45px;
+    border: none;
+    background-color: #FFF;
+}
+  
+.cart-info {
+    display: flex;
+    align-items: center;
+}
+  
+.decrease-btn,
+.increase-btn {
+    padding: 5px;
+    background-color: #2AD1C5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+} 
+.quantity {
+    margin: 0 5px;
+    margin-top: 15px;
+}
+.footer-social{
+    background-color: #2ad1c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 137px;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.email-box{
+    display: flex;/* Используем flexbox для выравнивания элементов */
+    align-items: center;/* Выравниваем элементы по вертикали */
+    border-radius: 30px;
+    width: 500px;
+    height: 50px;
+   /* flex-shrink: 0; /* Отключаем уменьшение размера элемента при недостатке места */
+    border: 1px solid var(--Mint, #2AD1C5);/* Задаем границу с помощью 1-пиксельной сплошной линии с цветом, выбранным через переменные CSS */
+    background: var(--White, #FFF);/* Задаем фоновый цвет, выбранный через переменные CSS */
+}
+.email-txt {
+    flex-grow: 1; /* Растягиваем поле ввода, чтобы занять доступное пространство */
+    border: none;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    color: #9A9A9A;
+    font-size: 14px;
+}  
+.fa-arrow-right{
+    color: #9A9A9A;
+    margin-right: 20px;
+}
+.footer-social div{
+    margin: 20px; /* Увеличивает интервал между каждым div */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* это будет выравнивать элементы по вертикали */
+    margin-left: 10px;
+}
+.social_network{
+    color: #FFF;
+}
+.fa-brands {
+    font-size: 30px; /* Задает размер иконок 24 пикселя */
+  }
+
+.foot ul {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    
+}
+.foot li{
+    padding-top: 20px;
+}
+
+.foot div{
+    display: inline-block;
+}
